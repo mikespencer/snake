@@ -1,0 +1,104 @@
+@import (inline) 'node_modules/reset-css/reset.css';
+
+@boardWidth: 500px;
+@borderColor: #333;
+@baseFontSize: 14px;
+@space: 14px;
+@spaceHalf: @space / 2;
+@spaceQuarter: @space / 4;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: @baseFontSize;
+  overflow: hidden; // prevent accidentally scrolling the page with arrow keys
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: @space;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+ul li {
+  padding-left: 0;
+  margin-left: @space;
+  list-style: disc;
+  padding-bottom: @space;
+}
+
+section {
+  margin-bottom: @space;
+}
+
+p {
+  margin-bottom: @space;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex--grow {
+  flex-grow: 1;
+}
+
+.board {
+  border: 2px solid @borderColor;
+  background-color: #efefef;
+}
+
+.display--none {
+  display: none;
+}
+
+.margin--top {
+  margin-top: @space;
+}
+
+.margin--bottom {
+  margin-bottom: @space;
+}
+
+.margin--left {
+  margin-left: @space;
+}
+
+.padding--top {
+  padding-top: @space;
+}
+
+.padding--bottom {
+  padding-bottom: @space;
+}
+
+.container {
+  margin: 0 auto;
+  width: @boardWidth;
+}
+
+.startBtn {
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: @spaceQuarter;
+  background: #209620;
+  color: white;
+  border: 1px solid @borderColor;
+  padding: @spaceHalf @space;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}

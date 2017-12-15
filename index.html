@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake by Mike Spencer</title>
+  <link rel="stylesheet" href="dist/app.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="flex padding--top">
+      <div class="flex--grow">
+        <h1>Snake</h1>
+        <h3>By Mike Spencer</h3>
+      </div>
+      <div class="margin--left">
+        <h2>Score:
+          <span class="score">
+            0
+            <!-- score output -->
+          </span>
+        </h2>
+      </div>
+    </header>
+    <section>
+      <canvas class="board" width="500" height="500"></canvas>
+    </section>
+    <section>
+      <button class="startBtn" style="width:100%">Start</button>
+    </section>
+    <section>
+      <h3>Help</h3>
+      <ul>
+        <li>Use the arrow keys on your keyboard to control the direction of the snake.</li>
+        <li>Eat food to score. Eating food will also increase the length of the snake.</li>
+        <li>If the snake hit's a wall or itself, it's game over.</li>
+      </ul>
+    </section>
+  </main>
+  <script src="dist/app.js"></script>
+</body>
+
+</html>
